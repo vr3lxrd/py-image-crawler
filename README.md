@@ -16,18 +16,18 @@ crawler.sitemapFetcher(url, path, local)
  - path (string) = a filter to the url that you want to select, example: '/products' will pick only url's with '/products' included
  - local (boolean) = defaulted to True, it determines if you are using a local file .xml (True) or looking for a url (False)
  
- ``
+ ````
 crawler.sitemapFetcher('https://www.kabum.com.br/sitemap/eletronicos.xml','calculadora', False)
- ``
+ ````
  
 It returns a **array** with all the url's that **matched your filter**.
 
 ### **getImages**
 Download all the images from a webpage.
 
-``
+````
 crawler.getImages(urlsArray)
-`` 
+```` 
 
  - urlsArray = a array with the url's that you want to download the images, made for using with **sitemapFetcher**
 
